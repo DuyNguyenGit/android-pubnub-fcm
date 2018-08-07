@@ -1,35 +1,35 @@
 {
   "project_info": {
-    "project_number": "671712274104",
-    "firebase_url": "https://harischat-5a788.firebaseio.com",
-    "project_id": "harischat-5a788",
-    "storage_bucket": "harischat-5a788.appspot.com"
+    "project_number": "570309928937",
+    "firebase_url": "https://demopushnotification-55da0.firebaseio.com",
+    "project_id": "demopushnotification-55da0",
+    "storage_bucket": "demopushnotification-55da0.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:671712274104:android:3bb1e8b0a3e6ec29",
+        "mobilesdk_app_id": "1:570309928937:android:7d31e7ea2e8d9f76",
         "android_client_info": {
-          "package_name": "com.pubnubchat"
+          "package_name": "com.duy.rct03.firebasepushdemo"
         }
       },
       "oauth_client": [
         {
-          "client_id": "671712274104-k57oaff4dl3pnadb1lvb1tmeo13rso52.apps.googleusercontent.com",
+          "client_id": "570309928937-ukkrrb74nqdag1ij9ontnunfr6bus23s.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.pubnubchat",
-            "certificate_hash": "9266D750F87B1F346914F543C90C0219C4E2B94F"
+            "package_name": "com.duy.rct03.firebasepushdemo",
+            "certificate_hash": "b1132495f9695e3b48370709d659f6b7c4be79d4"
           }
         },
         {
-          "client_id": "671712274104-skfkhto3nlo0fua22l39qpoqflsm3r8u.apps.googleusercontent.com",
+          "client_id": "570309928937-c0e0ifhn04sg16i5rbok3g7igjm00mck.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA69fyig1kjWKA_OzFv0dzzp4rUqt2bgv8"
+          "current_key": "AIzaSyCDmzrC9XEiMUMYyH4mLknXnYGrwci95HQ"
         }
       ],
       "services": {
@@ -40,10 +40,41 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "671712274104-skfkhto3nlo0fua22l39qpoqflsm3r8u.apps.googleusercontent.com",
+              "client_id": "570309928937-c0e0ifhn04sg16i5rbok3g7igjm00mck.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570309928937:android:3bb1e8b0a3e6ec29",
+        "android_client_info": {
+          "package_name": "com.pubnubchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570309928937-c0e0ifhn04sg16i5rbok3g7igjm00mck.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDmzrC9XEiMUMYyH4mLknXnYGrwci95HQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
         },
         "ads_service": {
           "status": 2

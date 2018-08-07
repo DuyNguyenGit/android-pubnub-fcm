@@ -11,6 +11,7 @@ import android.util.Log;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
+import com.google.gson.Gson;
 import com.pubnubchat.R;
 import com.pubnubchat.activity.ChatActivity;
 
@@ -40,12 +41,28 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
         // TODO(developer): Handle FCM messages here.
         // Not getting messages here? See why this may be: https://goo.gl/39bRNJ
-        Log.d(TAG, "From: " + remoteMessage.getFrom());
-        Log.d(TAG, "Notification Message Body: " + remoteMessage.getNotification().getBody());
+        if (remoteMessage != null) {
+            Log.d(TAG, "From: " + remoteMessage.getFrom());
+            //Log.d(TAG, "remoteMessage: " + new Gson().toJson(remoteMessage));
+            Log.d(TAG, "Message data payload: " + remoteMessage.getData());
+            Log.d(TAG, "Message data payload: " + remoteMessage.getData().get("message"));
+
+            // Check if message contains a notification payload.
+            if (remoteMessage.getNotification() != null) {
+                Log.d(TAG, "Message Notification Body: " + remoteMessage.getNotification().getBody());
+            }
+            if (remoteMessage.getData().size() > 0) {
+                Log.d(TAG, "Message data payload: " + remoteMessage.getData());
+            }
+            sendNotification(remoteMessage.getData().get("message"));
+        } else {
+            Log.d(TAG, "onMessageReceived: >>> remoteMessage is NULL !!!");
+        }
+
 
         // Also if you intend on generating your own notifications as a result of a received FCM
         // message, here is where that should be initiated. See sendNotification method below.
-        sendNotification("");
+
     }
     // [END receive_message]
 
